@@ -1,24 +1,46 @@
 *,
 *::before,
-*::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
-body{
-  font-size: 14px;
+body {
+    font-size: 14px;
 }
-ul{
-  list-style: none;
+ul {
+    list-style: none;
 }
-a{
-  color: #333;
-  text-decoration: none;
+a {
+    color: #333;
+    text-decoration: none;
 }
-input{
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+.container {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    clear: both;
+    /*只有块级元素管用*/
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
 }
